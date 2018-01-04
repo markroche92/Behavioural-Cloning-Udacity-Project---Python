@@ -10,7 +10,7 @@ In this project, you will use what you've learned about deep neural networks and
 
 We have provided a simulator where you can steer a car around a track for data collection. You'll use image data and steering angles to train a neural network and then use this model to drive the car autonomously around the track.
 
-We also want you to create a detailed writeup of the project. Check out the [writeup template](https://github.com/udacity/CarND-Behavioral-Cloning-P3/blob/master/writeup_template.md) for this project and use it as a starting point for creating your own writeup. The writeup can be either a markdown file or a pdf document.
+ Check out the [writeup_report](https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/writeup_report.md) for this project.
 
 To meet specifications, the project will require submitting five files: 
 * model.py (script used to create and train the model)
@@ -41,8 +41,6 @@ The goals / steps of this project are the following:
 This lab requires:
 
 * [CarND Term1 Starter Kit](https://github.com/udacity/CarND-Term1-Starter-Kit)
-
-The lab enviroment can be created with CarND Term1 Starter Kit. Click [here](https://github.com/udacity/CarND-Term1-Starter-Kit/blob/master/README.md) for the details.
 
 The following resources can be found in this github repository:
 * drive.py
