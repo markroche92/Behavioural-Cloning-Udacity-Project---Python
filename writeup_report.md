@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 [image3]: https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/right_example.jpg "Right_Example"
 [image4]: https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/bad_bend.jpg "Bad_Bend_Example"
 [image5]: https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/center_track_two.jpg "Center_Track_Two"
-[image6]: https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/epochs.jpg "Epochs"
+[image6]: https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/epochs.JPG "Epochs"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
