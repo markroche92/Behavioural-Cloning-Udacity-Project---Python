@@ -111,6 +111,6 @@ I finally randomly shuffled the data set and put 20% of the data into a validati
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 14. The progression of training and validation loss is shown below:
 
-![alt text](https://github.com/markroche92/Behavioural-Cloning-Udacity-Project---Python/master/epochs.JPG "Epochs")
+![alt text](https://github.com/markroche92/Behavioural-Cloning-Udacity-Project---Python/blob/master/epochs.JPG "Epochs")
 
 I used an adam optimizer with a learning rate of 0.0001. This learning rate allowed relatively quick training of the model to a sufficient level to drive around the track successfully.
