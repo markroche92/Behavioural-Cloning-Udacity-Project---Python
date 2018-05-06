@@ -10,16 +10,6 @@ The goals / steps of this project are the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
-
-[//]: # (Image References)
-
-[image1]: https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/center_example.jpg "Center_Example"
-[image2]: https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/left_example.jpg "Left_Example"
-[image3]: https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/right_example.jpg "Right_Example"
-[image4]: https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/bad_bend.jpg "Bad_Bend_Example"
-[image5]: https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/center_track_two.jpg "Center_Track_Two"
-[image6]: https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/epochs.JPG "Epochs"
-
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
 
@@ -98,22 +88,22 @@ Normalisation and cropping layers are followed by 5 convolutional layers, and 3 
 
 To capture good driving behavior, I first recorded a lap on track one using center lane driving. Here is an example image of center lane driving (center camera):
 
-![alt text][image1]
+![alt text](https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/center_example.jpg "Center_Example")
 
 I also used images captured by the right and left cameras on the vehicle:
 
-![alt text][image2]
-![alt text][image3]
+![alt text](https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/left_example.jpg "Left_Example")
+![alt text](https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/right_example.jpg "Right_Example")
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to. Specifically, I used this method of data gathering for the first bend after the bridge.
 
-![alt text][image4]
+![alt text](https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/bad_bend.jpg "Bad_Bend_Example")
 
 I did not augment the dataset other than cropping. The positive impact in performance of the model was clear after adding cropping to the network input. I avoided adding flipped images to the training and validation dataset, as I realised that the cropping would also apply to these images, and the wrong information in the image would be cropped out. As I managed to get strong performance without adding flipped images, I am happy.
 
 In order to help the model generalize, I gathered a single lap of data from the second track as shown below:
 
-![alt text][image5]
+![alt text](https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/center_track_two.jpg "Center_Track_Two")
 
 After the collection process, I had 16091 training images and 4021 validation images.
 
@@ -121,6 +111,6 @@ I finally randomly shuffled the data set and put 20% of the data into a validati
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 14. The progression of training and validation loss is shown below:
 
-![alt text][image6]
+![alt text](https://github.com/markroche92/Behavioural-Cloning-Project/blob/master/epochs.JPG "Epochs")
 
-I used an adam optimizer with a learning rate of 0.0001. This learning rate allowed realtively quick training of the model to a sufficient level to drive around the track successfully.
+I used an adam optimizer with a learning rate of 0.0001. This learning rate allowed relatively quick training of the model to a sufficient level to drive around the track successfully.
